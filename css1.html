@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các món ngon Hà Nội</title>
+    <style>
+        /* Cấu hình chung */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fdf5e6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            margin: 30px auto;
+            width: 50%;
+            background-color: #fff8dc;
+            border: 2px solid #d9a93a;
+            padding:8px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            color: orange;
+            font-size: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 30px;
+        }
+
+
+
+        .content-wrapper img {
+            width: 200px;
+            height: auto;
+        }
+
+        table {
+            width: 45%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #c45c09;
+            padding: 1px;
+        }
+
+        table th {
+            background-color: red;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Căn giữa STT */
+        table td:first-child {
+            text-align: center;
+            vertical-align: middle;
+
+ 
+        }
+        
+        /* Căn giữa ô tiêu đề tên món ăn */
+        table th:nth-child(2) {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* Căn trái nội dung các ô bên dưới */
+        table td:nth-child(2) {
+            text-align: left;
+            padding-left: 10px;
+        }
+        table td {
+            background-color: #fff;
+        }
+ 
+        table tr:nth-child(odd) td {
+            background-color: #fff8e1; /* Màu nền xen kẽ */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phần tiêu đề -->
+        <div class="header">
+            <h1>Các món ngon Hà Nội</h1>
+        </div>
+
+        <!-- Phần nội dung: hình ảnh và bảng món ăn -->
+        <div class="content-wrapper">
+            <img src="data:image/jpeg;base64,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" alt="Ảnh món ăn">
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên món ăn</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bánh cuốn Thanh Trì</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chả cá Lã Vọng</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cháo Cốc</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bánh Gai Ninh Giang</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Bún Thang Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Canh Làng</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Vịt quay Lạng Sơn</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
