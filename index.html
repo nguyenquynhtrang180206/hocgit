@@ -1,47 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý công việc</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #todo-container {
-            width: 300px;
-            margin: auto;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            background: #f4f4f4;
-            margin: 5px 0;
-            padding: 10px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        li:hover {
-            background: #ddd;
-        }
-        .completed {
-            text-decoration: line-through;
-            color: gray;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Người dùng & Bài viết</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Quản lý công việc</h1>
-    <div id="todo-container">
-        <input type="text" id="task-input" placeholder="Nhập công việc...">
-        <button id="add-task">Thêm Công Việc</button>
-        <ul id="task-list"></ul>
+  <div class="container">
+    
+
+    <div class="content">
+      <div class="user-section">
+        <h3> Danh sách người dùng</h3>
+        <ul id="userList"></ul>
+      </div>
+
+      <div class="post-section">
+        <div id="userPosts">👈 Chọn một người dùng bên trái để xem bài viết</div>
+      </div>
     </div>
-    <script src="script.js" defer></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
